@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Reservation</title>
+    <link rel="stylesheet" href="BookServiceStyle.css">
+    
+</head>
+<body>
+    <div class="sidebar">
+        <div class="logo-container">
+            <img src="parishlogo.png" alt="Church Logo" class="logo">
+        </div>
+        <nav>
+            <a href="#" class="menu-item">
+                <i class="fas fa-bookmark"></i>
+                <span>Book Services</span>
+            </a>
+            <a href="#" class="menu-item">
+                <i class="fas fa-calendar"></i>
+                <span>Reservations</span>
+            </a>
+            <a href="#" class="menu-item">
+                <i class="fas fa-dollar-sign"></i>
+                <span>Payments</span>
+            </a>
+            <a href="#" class="menu-item">
+                <i class="fas fa-bell"></i>
+                <span>Notifications</span>
+            </a>
+            <a href="#" class="menu-item">
+                <i class="fas fa-user"></i>
+                <span>Profile</span>
+            </a>
+        </nav>
+        <a href="#" class="menu-item logout">
+            <i class="fas fa-sign-out-alt"></i>
+            <span>Log out</span>
+        </a>
+    </div>
+
+    <div class="main-content">
+        <h1 class="reservation-title">Event Reservation</h1>
+        <p class="reservation-subtitle">Select a time and date for your event</p>
+
+        <div class="calendar-header">
+            <div class="month-nav">
+                <button class="nav-btn"><i class="fas fa-chevron-left"></i></button>
+                <span>November 2024</span>
+                <button class="nav-btn"><i class="fas fa-chevron-right"></i></button>
+            </div>
+        </div>
+
+        <table class="calendar">
+            <thead>
+                <tr>
+                    <th>Su</th>
+                    <th>Mo</th>
+                    <th>Tu</th>
+                    <th>We</th>
+                    <th>Th</th>
+                    <th>Fr</th>
+                    <th>Sa</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="disabled-day">27</td>
+                    <td class="disabled-day">28</td>
+                    <td class="disabled-day">29</td>
+                    <td class="disabled-day">30</td>
+                    <td>1</td>
+                    <td>2</td>
+                    <td>3</td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>5</td>
+                    <td>6</td>
+                    <td>7</td>
+                    <td>8</td>
+                    <td>9</td>
+                    <td>10</td>
+                </tr>
+                <tr>
+                    <td>11</td>
+                    <td>12</td>
+                    <td>13</td>
+                    <td>14</td>
+                    <td>15</td>
+                    <td>16</td>
+                    <td>17</td>
+                </tr>
+                <tr>
+                    <td>18</td>
+                    <td>19</td>
+                    <td>20</td>
+                    <td>21</td>
+                    <td>22</td>
+                    <td>23</td>
+                    <td>24</td>
+                </tr>
+                <tr>
+                    <td>25</td>
+                    <td>26</td>
+                    <td>27</td>
+                    <td>28</td>
+                    <td>29</td>
+                    <td>30</td>
+                    <td class="disabled-day">1</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <div class="form-group">
+            <label class="form-label">Event Type</label>
+            <div class="event-type-dropdown">
+                <select class="form-select" id="eventType">
+                    <option value="">Select Event Type</option>
+                    <option value="mass">Mass</option>
+                    <option value="wedding">Wedding</option>
+                    <option value="christening">Christening</option>
+                    <option value="funeral">Funeral Mass</option>
+                    <option value="blessing">Home Blessing</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label class="form-label">Select Time</label>
+            <input type="text" class="form-input" placeholder="Enter Time Slot">
+        </div>
+
+        <div class="form-group">
+            <label class="form-label">Number Attendees</label>
+            <input type="number" class="form-input" placeholder="Enter Number of Attendees">
+        </div>
+
+        <div class="form-group">
+            <label class="form-label">Additional Notes</label>
+            <textarea class="form-textarea" rows="4" placeholder="Enter any special requirements or notes"></textarea>
+        </div>
+    </div>
+</body>
+</html>
